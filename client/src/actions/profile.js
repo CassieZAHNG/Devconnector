@@ -49,6 +49,7 @@ export const createProfile = (
       history.push("/dashboard");
     }
   } catch (err) {
+    //validation errors
     const errors = err.response.data.errors;
 
     if (errors) {
