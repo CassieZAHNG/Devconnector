@@ -47,7 +47,7 @@ const EditProfile = ({
       youtube: loading || !profile.social ? "" : profile.social.youtube,
       instagram: loading || !profile.social ? "" : profile.social.instagram
     });
-  }, [loading]); //condition: props depend on loading
+  }, [loading, getCurrentProfile]); //condition: props depend on loading
 
   //de-structure formData, use as title as variables
   const {

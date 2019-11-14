@@ -16,7 +16,7 @@ const Dashboard = ({
 }) => {
   useEffect(() => {
     getCurrentProfile();
-  }, []);
+  }, [getCurrentProfile]);
   // use ternary: if the profile is null & it is still loading, then showing spinner, else fragment
   return loading && profile === null ? (
     <Spinner />
