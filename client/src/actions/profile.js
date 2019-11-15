@@ -105,6 +105,8 @@ export const createProfile = (
     //if edit is true, then say profile update; else say profile created
     dispatch(setAlert(edit ? "Profile Update" : "Profile Created", "success"));
 
+    // history.push("/dashboard");
+
     //if editing it, stay on the page, if creating it, then redirect
     if (!edit) {
       history.push("/dashboard");
