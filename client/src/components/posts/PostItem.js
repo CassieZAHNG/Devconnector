@@ -14,16 +14,15 @@ const PostItem = ({
 }) => (
   <div class="post bg-white p-1 my-1">
     <div>
-      <a href="profile.html">
+      <Link to={`/profile/${user}`}>
         <img class="round-img" src={avatar} alt="" />
         <h4>{name}</h4>
-      </a>
+      </Link>
     </div>
     <div>
       <p class="my-1">{text}</p>
       <p class="post-date">
-        Posted on <Moment format="YYYY/MM/DD"></Moment>
-        {date}
+        Posted on <Moment format="YYYY/MM/DD">{date}</Moment>
       </p>
       <button onClick={e => addLike(_id)} type="button" class="btn btn-light">
         <i class="fas fa-thumbs-up"></i>{" "}
