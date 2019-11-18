@@ -2,6 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
+// const ProfileItem = props => {
+//   return <div>test</div>;
+// };
+
 const ProfileItem = ({
   profile: {
     user: { _id, name, avatar },
